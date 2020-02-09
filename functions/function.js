@@ -1,5 +1,5 @@
 alert('hi')
-let color = 'lightblue'
+let color = 'red'
 let gridSize = 8
 
 function setup() {
