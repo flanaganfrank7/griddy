@@ -1,11 +1,13 @@
 gridSize = document.currentScript.getAttribute('size');
 gridColor = document.currentScript.getAttribute('color');
 finalSize = parseInt(gridSize)
+zed = document.currentScript.getAttribute('zed');
+finalZed = parseInt(gridSize)
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0)
-    canvas.style('z-index', '-1')
+    canvas.style('z-index', finalZed)
 }
 
 function draw() {
