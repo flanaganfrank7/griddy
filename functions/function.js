@@ -1,4 +1,3 @@
-alert('hi')
 let color = 'red'
 let gridSize = 8
 
