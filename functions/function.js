@@ -13,7 +13,7 @@ function draw() {
     background(255);
 
     for (let x = 0; x < windowWidth; x = x + gridSize) {
-        fill(255)
+        fill(0, 0, 0, 0)
         stroke(color);
         strokeWeight(1);
         line(x, 0, x, windowHeight)
