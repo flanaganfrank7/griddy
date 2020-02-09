@@ -1,5 +1,4 @@
 let color = 'red'
-let gridSize = 8
 
 gridSize = document.currentScript.getAttribute('size'); //1
 
