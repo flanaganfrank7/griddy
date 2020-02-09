@@ -19,7 +19,7 @@ function draw() {
 
         stroke(gridColor);
         strokeWeight(.1);
-        line(x, 0, x, windowHeight)
+        line(x, 0, x, bodyHeight)
     }
     for (let y = 0; y < bodyHeight; y = y + finalSize) {
         fill(255)
