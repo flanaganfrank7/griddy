@@ -1,7 +1,7 @@
 let color = 'red'
 
 gridSize = document.currentScript.getAttribute('size'); //1
-
+alert(gridSize)
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
