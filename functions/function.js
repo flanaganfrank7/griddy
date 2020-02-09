@@ -1,3 +1,2 @@
-exports.handler = function (event, context, callback) {
-    alert('hi')
-}
+alert('hi')
+
