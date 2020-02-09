@@ -1,9 +1,10 @@
-bodyHeight = document.height
+let bodyHeight = document.height
+alert(bodyHeight)
 
-gridSize = document.currentScript.getAttribute('size');
-gridColor = document.currentScript.getAttribute('color');
-finalSize = parseInt(gridSize)
-zed = document.currentScript.getAttribute('zed');
+let gridSize = document.currentScript.getAttribute('size');
+let gridColor = document.currentScript.getAttribute('color');
+let finalSize = parseInt(gridSize)
+let zed = document.currentScript.getAttribute('zed');
 // finalZed = parseInt(zed)
 
 function setup() {
