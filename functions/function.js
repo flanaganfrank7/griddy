@@ -1,13 +1,15 @@
+// bodyHeight = docu
+
 gridSize = document.currentScript.getAttribute('size');
 gridColor = document.currentScript.getAttribute('color');
 finalSize = parseInt(gridSize)
 zed = document.currentScript.getAttribute('zed');
-finalZed = parseInt(gridSize)
+// finalZed = parseInt(zed)
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
     canvas.position(0, 0)
-    canvas.style('z-index', finalZed)
+    canvas.style('z-index', zed)
 }
 
 function draw() {
@@ -25,6 +27,5 @@ function draw() {
         strokeWeight(.1);
         line(0, y, windowWidth, y)
     }
-
 }
 
