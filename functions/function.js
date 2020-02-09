@@ -2,10 +2,8 @@ alert('hi')
 let color = 'red'
 let gridSize = 8
 
-var url_string = window.location.href
-var url = new URL(url_string);
-var c = url.searchParams.get("size");
-alert(c);
+var help = document.currentScript.getAttribute('one'); //1
+alert(help)
 
 function setup() {
     canvas = createCanvas(windowWidth, windowHeight);
