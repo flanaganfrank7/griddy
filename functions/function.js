@@ -1,8 +1,4 @@
-var body = document.body,
-    html = document.documentElement;
-
-var height = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
-alert(height)
+bodyHeight = document.height
 
 gridSize = document.currentScript.getAttribute('size');
 gridColor = document.currentScript.getAttribute('color');
@@ -25,7 +21,7 @@ function draw() {
         strokeWeight(.1);
         line(x, 0, x, windowHeight)
     }
-    for (let y = 0; y < windowHeight; y = y + finalSize) {
+    for (let y = 0; y < bodyHeight; y = y + finalSize) {
         fill(255)
         stroke(gridColor);
         strokeWeight(.1);
