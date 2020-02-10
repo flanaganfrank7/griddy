@@ -1,14 +1,17 @@
-let bodyHeight = document.height
-alert(bodyHeight)
+var bodyHeight;
 
-let gridSize = document.currentScript.getAttribute('size');
-let gridColor = document.currentScript.getAttribute('color');
-let finalSize = parseInt(gridSize)
-let zed = document.currentScript.getAttribute('zed');
-// finalZed = parseInt(zed)
+
+bodyHeight = $(document).height()
+
+
+gridSize = parseInt(document.currentScript.getAttribute('size'));
+gridOpacity = parseInt(document.currentScript.getAttribute('opacity'));
+gridColor = document.currentScript.getAttribute('color');
+zed = document.currentScript.getAttribute('zed');
+
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);
+    canvas = createCanvas(windowWidth, bodyHeight);
     canvas.position(0, 0)
     canvas.style('z-index', zed)
 }
@@ -16,17 +19,19 @@ function setup() {
 function draw() {
     background(0, 0, 0, 0);
 
-    for (let x = 0; x < windowWidth; x = x + finalSize) {
+    for (let x = 0; x < windowWidth; x = x + gridSize) {
 
         stroke(gridColor);
-        strokeWeight(.1);
+        strokeWeight(1);
         line(x, 0, x, bodyHeight)
     }
-    for (let y = 0; y < bodyHeight; y = y + finalSize) {
+    for (let y = 0; y < bodyHeight; y = y + gridSize) {
         fill(255)
         stroke(gridColor);
-        strokeWeight(.1);
+        strokeWeight(1);
         line(0, y, windowWidth, y)
     }
+
+    noLoop()
 }
 
