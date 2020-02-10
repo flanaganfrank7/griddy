@@ -1,7 +1,9 @@
 var bodyHeight;
 
-
-bodyHeight = $(document).height()
+html = document.documentElement;
+var body = document.body
+bodyHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
 
 
 gridSize = parseInt(document.currentScript.getAttribute('size'));
@@ -34,4 +36,3 @@ function draw() {
 
     noLoop()
 }
-

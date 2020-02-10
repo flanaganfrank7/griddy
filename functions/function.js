@@ -1,13 +1,15 @@
 var bodyHeight;
 
-
-bodyHeight = $(document).height()
+html = document.documentElement;
+var body = document.body
+bodyHeight = Math.max( body.scrollHeight, body.offsetHeight, 
+                       html.clientHeight, html.scrollHeight, html.offsetHeight );
 
 
 gridSize = parseInt(document.currentScript.getAttribute('size'));
 gridOpacity = parseInt(document.currentScript.getAttribute('opacity'));
 gridColor = document.currentScript.getAttribute('color');
-zed = parseInt(document.currentScript.getAttribute('zed'));
+zed = document.currentScript.getAttribute('zed');
 
 
 function setup() {
@@ -34,4 +36,3 @@ function draw() {
 
     noLoop()
 }
-
