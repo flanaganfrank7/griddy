@@ -7,7 +7,7 @@ bodyHeight = $(document).height()
 gridSize = parseInt(document.currentScript.getAttribute('size'));
 gridOpacity = parseInt(document.currentScript.getAttribute('opacity'));
 gridColor = document.currentScript.getAttribute('color');
-zed = document.currentScript.getAttribute('zed');
+zed = parseInt(document.currentScript.getAttribute('zed'));
 
 
 function setup() {
