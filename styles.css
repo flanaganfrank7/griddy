@@ -68,4 +68,7 @@ a:hover{
   .container{
       width: 90%;
   }
+  .flag{
+      font-size: .5rem;
+  }
 }
