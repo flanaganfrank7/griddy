@@ -3,36 +3,46 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hagrid</title>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Prism -->
     <link rel="stylesheet" type="text/css" href="prism.css">
+    <!-- Global Styles -->
+    <link rel="stylesheet" type="text/css" href="https://ff-master-template.netlify.com/global.css">
+    <!-- Local Styles -->
+    <link rel="stylesheet" type="text/css" href="localStyles.css">
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- P5 -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="row header">
+        <div class="row ff-header">
             <div class="col-sm-4">
-                <p class="project-title">Hagrid</p>
-                <ul class="project-links">
+                <p class="ff-project-title">Hagrid</p>
+                <ul class="ff-project-links">
                     <li><a target="_blank" href="https://github.com/flanaganfrank7/hagrid">Github</a></li>
                 </ul>
             </div>
             <div class="col-sm-8">
-                <p class="project-description">Hagrid is a simple script built for designers and developers. Embedding
+                <p class="ff-project-description">Hagrid is a simple script built for designers and developers. Embedding
                     the script below will add a canvas to your web page at a specified z-index, cell size, and color.
                     This project was built with <a href="https://p5js.org/">P5.JS</a>, hosted with <a
                         href="http://netlify.com/">Netlify</a> and inspired by <a
                         href="https://basehold.it">Basehold.it</a>.</p>
             </div>
         </div>
-        <div class="row docs">
-            <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-4 ff-spacer">
             </div>
-            <div class="col-md-8 col-sm-12">
+            
+            <div class="col-md-8 col-sm-12 docs">
                 <div class="flag">This project is in beta. Please submit feedback and issues <a
                         href="https://github.com/flanaganfrank7/hagrid/issues">here</a>.</div>
                 <h4>Usage</h4>
@@ -40,11 +50,11 @@
                     body.
                 </p>
                 <pre>
-    <code class="language-markup">
-    &lt;script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'&gt;&lt;/script&gt;
-    &lt;script src="https://hagridjs.netlify.com/functions/function.js" color="#f0f0f0" size=8 zed=-10&gt;&lt;/script&gt;
-    </code>
-    </pre>
+                    <code class="language-markup">
+                    &lt;script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'&gt;&lt;/script&gt;
+                    &lt;script src="https://hagridjs.netlify.com/functions/function.js" color="#f0f0f0" size=8 zed=-10&gt;&lt;/script&gt;
+                    </code>
+                </pre>
                 <h4>Attributes</h4>
                 <p class="description">Hagrid takes three parameters:</p>
                 <ol class="description">
@@ -54,18 +64,18 @@
                     <li><strong>zed</strong>: set the z-index value of the grid</li>
                 </ol>
             </div>
-        </div>
-        <div class="row footer">
-            <div class="col-12">
-                <p>👋 Hi, I'm Frank. This is one of my <a href='https://frankflanagan.design' target="_blank">side
-                        projects.</a></p>
             </div>
+        
+
+        <div class="row ff-footer">
+            <p class="col-sm-12">🖖 Hi, I'm Frank. This is one of my <a href='https://frankflanagan.design' target="_blank">side
+                    projects.</a></p>
         </div>
     </div>
-
 </body>
+<!-- Local JS -->
+<!-- <script type="text/javascript" src="index.js"></script> -->
 <script src="prism.js"></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'></script>
 <script src="https://hagridjs.netlify.com/functions/function.js" color="#f0f0f0" size=8 zed=-10></script>
 
 </html>
